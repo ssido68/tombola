@@ -1,51 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="ISO-8859-1">
-<title>TOMBOLA</title>
-<script type="text/javascript" src="js/jquery-1.10.0.min.js"></script>
-<script type="text/javascript" src="js/jquery.dataTables.js"></script>
+    <meta charset="ISO-8859-1">
+    <title>TOMBOLA</title>
+    <script type="text/javascript" src="js/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.js"></script>
 
-<script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
-<script type="text/javascript" src="js/sqlite-db.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="js/sqlite-db.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap-notify.js"></script>
+    <script type="text/javascript" src="js/bootbox.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
-<link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
-<link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link href="css/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/Tombola.css" rel="stylesheet">
 
 </head>
+
 <body onload="initApp()">
-    <table >
-        <th>
-            <tr>
-            <td> Nom</td>
-            <td> ticket</td>
-            <td> </td>
-        </tr>
-        </th>
-        <tr>
-            <td><input id="ParticipantNom"></td>
-            <td><input id="ParticipantTicket"></td>
-            <td><button id="ParticipantAjouter">Ajouter</button></td>
-    
-        </tr>
-    </table>
 
-    <table id="Participants" border="1" width="550px">
-        <thead>
-            <tr>            
-                <td> Nom</td>
-                <td> ticket</td>
-            </tr>
-        </thead>
-        <tbody>
+    <div style="background-color: #ccc" class="mx-5">
 
-        </tbody>
-    </table>
-    
+        <div class="modal-header pe-bootstrap-title-2 ">
+            Participants
+            <a type="button" role="button" class="collpase_icns" data-bs-dismiss="modal" href="#Participants"
+                data-bs-toggle="collapse" aria-controls="CadreParticipants" title=""
+                id="CollapseCadreParticipantsButton"></a>
+        </div>
 
-    <script type="text/javascript" src="js/tombola.js"></script>
+
+        <div class="container-fluid col-xl-12 mx-3 collapse show" id="CadreParticipants">
+
+            <table class="table table-fit table-hover Liste" id="Participants" width="550px">
+                <thead>
+                    <tr>
+                        <td> </td>
+                        <td id="Entete"><b>Nom</b> </td>
+                        <td id="Entete"> ticket</td>
+                        <td></td>
+                    </tr>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+            <div class="d-inline-flex w-100">
+                <div class="form-floating col-2 pe-bootstrap-form-float">
+                    <input type="text" class="form-control ui-front pe-bootstrap-form-field" id="ParticipantNom" />
+                    <label class="control-label pe-bootstrap-form-label">Nom</label>
+                </div>
+                <div width="10px">&nbsp;</div>
+                <div class="form-floating col-1 pe-bootstrap-form-float">
+                    <input type="text" class="form-control ui-front pe-bootstrap-form-field" id="ParticipantTicket" />
+                    <label class="control-label pe-bootstrap-form-label">Tickets</label>
+                </div>
+                <div width="10px">&nbsp;</div>
+                <button class="submit_icns" title="Ajouter Participant" id="ParticipantAjouter">
+                    Ajouter
+                </button>
+                <input type="text" id="mode" readonly>
+            </div>
+            <div class="row mb-3 "></div>
+
+        </div>
+
+
+
+        <script type="text/javascript" src="js/tombola.js"></script>
 </body>
+
 </html>

@@ -1,57 +1,216 @@
+﻿
 
-
-function Fonctions_Paricipants() {
-    $("#ParticipantAjouter").click(function(){
+function Fonctions_Participants() {
+    $("#ParticipantAjouter").click(function () {
         console.log("ParticipantAjouter cliquer!");
 
-        var nom =  $("#ParticipantNom").val() ;
-        var ticket =   $("#ParticipantTicket").val();
+        var nom = $("#ParticipantNom").val();
+        var ticket = $("#ParticipantTicket").val();
+        success = false;
 
-        database.transaction(function(tx){ 
-            var insertSql = 'insert into Participant( name, desc ,tickets) values("'+nom +'","" ,"'+ticket +'")';
-            console.log( "sql:"+insertSql )
-            tx.executeSql(insertSql);
+        if (Math.floor(ticket) == ticket && $.isNumeric(ticket))
+            success = true;
+
+        if (success == false) {
+            var notify = $.notify('<strong>Error</strong> Nombre de tickets, valuer incorrecte!', {
+                type: 'danger',
+                allow_dismiss: true,
+            });
+
+        } else {
+            console.log("all right!!!")
+            database.transaction(function (tx) {
+                var insertSql = 'insert into Participant( name, desc ,tickets) values("' + nom + '","" ,"' + ticket + '")';
+                console.log("sql:" + insertSql)
+                tx.executeSql(insertSql);
+            });
+
+            var notify = $.notify('<strong>Confirmation</strong> Nouvelle participation enregistrée', {
+                type: 'success',
+                allow_dismiss: true,
+            });
+
+
+            $("#ParticipantNom").val("");
+            $("#ParticipantTicket").val("");
+
+            ChargerParticipants();
+
+        }
+
+
+
+    });
+
+    console.log("loading events")
+
+    $("#Participants tbody").on("click", 'button.SupprimerParticipation', function () {
+        var button = $(this);
+        console.log("#SupprimerParticipation Clique");
+        console.log(" > " + button.attr("participant-rowid"));
+
+        bootbox.confirm({
+            title: "Supprimer participation?",
+            message: "Vous êtes sur de vouloir supprimer cette participation?",
+            buttons: {
+                cancel: {
+                    label: '<i class="fa fa-times"></i> Annuler'
+                },
+                confirm: {
+                    label: '<i class="fa fa-check"></i> Confirmer'
+                }
+            },
+            callback: function (result) {
+                console.log('Confirmation: ' + result);
+                if (result == true) {
+                    database.transaction(function (tx) {
+                        var deleteSql = 'delete from Participant where rowid = ' + button.attr("participant-rowid");
+                        console.log("sql:" + deleteSql)
+                        tx.executeSql(deleteSql);
+                    });
+
+
+                    var notify = $.notify('<strong>Confirmation</strong> Participation supprimée....', {
+                        type: 'danger',
+                        allow_dismiss: true,
+                    });
+
+
+
+                    ChargerParticipants();
+
+                }
+            }
         });
 
-        $("#ParticipantNom").val("");
-        $("#ParticipantTicket").val("");
 
-        ChargerParticipants();
 
-    }); 
+
+
+
+    });
+
+    $(document).on("dblclick", "#Participants tr", function () {
+        //code here
+        var selectedId = $(this).children("td:first")[0].id
+
+        $("#mode").val("update");
+        $("#ParticipantAjouter").text("Mettre a jour");
+
+
+
+        $("#ParticipantNom").text();
+        $("#ParticipantTicket").text();
+
+
+    });
+
+
+
+
+
+
+}
+
+
+function Notification_functions() {
+
+    $(function () {
+        $(".btn").on("click", function () {
+
+            var notify = $.notify('<strong>Saving</strong> Do not close this page...', {
+                type: 'danger',
+                allow_dismiss: true,
+            });
+
+
+            notify('message', '<strong>Saving</strong> Page Data.');
+
+
+            setTimeout(function () {
+                notify('message', '<strong>Saving</strong> User Data.');
+            }, 500);
+
+
+
+
+        });
+    });
+
+
+
 }
 
 
 
 
-    
-function ChargerParticipants () {
+function ChargerParticipants() {
     OpenDb();
-    database.transaction(function(tx){ 
-        var selectSql = 'select * from Participant';
-        tx.executeSql(selectSql, [], function(tx, result){
+    database.transaction(function (tx) {
+        var selectSql = 'select rowid,name,tickets from Participant';
+        tx.executeSql(selectSql, [], function (tx, result) {
 
             console.log('result.rows.length = ' + result.rows.length);
             var tableParticipants = $('#Participants').DataTable();
             tableParticipants.clear()
                 .draw();
-            for(i = 0; i < result.rows.length; i++) {
-                console.log("nom:" + result.rows.item(i).name );
-                tableParticipants.row.add( [ result.rows.item(i).name, result.rows.item(i).tickets ] )
-                .draw()
-                .node();
+
+            for (i = 0; i < result.rows.length; i++) {
+
+                var thisRowid = result.rows.item(i).rowid;
+                var thisName = result.rows.item(i).name;
+                var thisTickets = result.rows.item(i).tickets;
+                var thisSupprimer = "<button class='btn-danger SupprimerParticipation'  participant-rowid='" + thisRowid + "' title='Supprimer paricipation' >-</button>";
+
+                var data = {
+                    "rowid": thisRowid,
+                    "name": thisName,
+                    "tickets": thisTickets,
+                    "action": thisSupprimer
+                }
+
+                var newRow = tableParticipants
+                    .row.add(data)
+                    .draw()
+                    .node();
+                $(newRow).find('td').eq(0).attr("id", thisRowid);
+
 
             }
-           
-           
-    
-        }, function(tx, error){
+            tableParticipants.draw()
+
+
+
+
+
+        }, function (tx, error) {
             alert(error);
         });
     });
 }
 
-$(document).ready(function(){
-    Fonctions_Paricipants();
+$(document).ready(function () {
+    Fonctions_Participants();
     ChargerParticipants();
+
+    $("#Participants").DataTable({
+        bInfo: false,
+        paging: false,
+        data: null,
+        dom: 'lrtip',
+        columns: [
+            { "data": "rowid" },
+            { "data": "name" },
+            { "data": "tickets" },
+            { "data": "action" }
+        ],
+        columnDefs: [{
+            orderable: false,
+            targets: [0, 3]
+        }, {
+            visible: false,
+            targets: [0]
+        }],
+    });
+
 });
