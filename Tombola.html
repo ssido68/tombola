@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>TOMBOLA</title>
+<script type="text/javascript" src="js/jquery-1.10.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.dataTables.js"></script>
+
+<script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+<script type="text/javascript" src="js/sqlite-db.js" charset="utf-8"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+
+</head>
+<body onload="initApp()">
+    <table >
+        <th>
+            <tr>
+            <td> Nom</td>
+            <td> ticket</td>
+            <td> </td>
+        </tr>
+        </th>
+        <tr>
+            <td><input id="ParticipantNom"></td>
+            <td><input id="ParticipantTicket"></td>
+            <td><button id="ParticipantAjouter">Ajouter</button></td>
+    
+        </tr>
+    </table>
+
+    <table id="Participants" border="1" width="550px">
+        <thead>
+            <tr>            
+                <td> Nom</td>
+                <td> ticket</td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    
+
+    <script type="text/javascript" src="js/tombola.js"></script>
+</body>
+</html>
