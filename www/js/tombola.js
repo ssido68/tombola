@@ -4,39 +4,84 @@ function Fonctions_Participants() {
     $("#ParticipantAjouter").click(function () {
         console.log("ParticipantAjouter cliquer!");
 
-        var nom = $("#ParticipantNom").val();
-        var ticket = $("#ParticipantTicket").val();
-        success = false;
-
-        if (Math.floor(ticket) == ticket && $.isNumeric(ticket))
+        if ($("#mode").val() == "update" ) {
+            var nom = $("#ParticipantNom").val();
+            var ticket = $("#ParticipantTicket").val();
+            success = false;
+    
+            if (Math.floor(ticket) == ticket && $.isNumeric(ticket))
             success = true;
 
-        if (success == false) {
-            var notify = $.notify('<strong>Error</strong> Nombre de tickets, valuer incorrecte!', {
-                type: 'danger',
-                allow_dismiss: true,
-            });
+            if (success == false) {
+                var notify = $.notify('<strong>Error</strong> Nombre de tickets, valeur incorrecte!', {
+                    type: 'danger',
+                    allow_dismiss: true,
+                });
+    
+            } else {
+                console.log("all right!!!")
+                database.transaction(function (tx) {
+                    var updateSql = 'update Participant set name="' + nom + '" , desc = ""  ,tickets = "' + ticket + '" where rowid = ' + $("#rowid").val();
+                    console.log("sql:" + updateSql)
+                    tx.executeSql(updateSql);
+                });
+    
+                var notify = $.notify('<strong>Confirmation</strong> Participation mise a jour', {
+                    type: 'success',
+                    allow_dismiss: true,
+                });
+    
+    
+                $("#ParticipantNom").val("");
+                $("#ParticipantTicket").val("");
+                $("#rowid").val("");
+    
+                $("#mode").val("");
+                $("#ParticipantAjouter").text("Ajouter");
+        
+
+                ChargerParticipants();
+    
+            }
+
 
         } else {
-            console.log("all right!!!")
-            database.transaction(function (tx) {
-                var insertSql = 'insert into Participant( name, desc ,tickets) values("' + nom + '","" ,"' + ticket + '")';
-                console.log("sql:" + insertSql)
-                tx.executeSql(insertSql);
-            });
-
-            var notify = $.notify('<strong>Confirmation</strong> Nouvelle participation enregistrée', {
-                type: 'success',
-                allow_dismiss: true,
-            });
-
-
-            $("#ParticipantNom").val("");
-            $("#ParticipantTicket").val("");
-
-            ChargerParticipants();
-
+            var nom = $("#ParticipantNom").val();
+            var ticket = $("#ParticipantTicket").val();
+            success = false;
+    
+            if (Math.floor(ticket) == ticket && $.isNumeric(ticket))
+                success = true;
+    
+            if (success == false) {
+                var notify = $.notify('<strong>Error</strong> Nombre de tickets, valeur incorrecte!', {
+                    type: 'danger',
+                    allow_dismiss: true,
+                });
+    
+            } else {
+                console.log("all right!!!")
+                database.transaction(function (tx) {
+                    var insertSql = 'insert into Participant( name, desc ,tickets) values("' + nom + '","" ,"' + ticket + '")';
+                    console.log("sql:" + insertSql)
+                    tx.executeSql(insertSql);
+                });
+    
+                var notify = $.notify('<strong>Confirmation</strong> Nouvelle participation enregistrée', {
+                    type: 'success',
+                    allow_dismiss: true,
+                });
+    
+    
+                $("#ParticipantNom").val("");
+                $("#ParticipantTicket").val("");
+    
+                ChargerParticipants();
+    
+            }
+    
         }
+
 
 
 
@@ -94,13 +139,16 @@ function Fonctions_Participants() {
         //code here
         var selectedId = $(this).children("td:first")[0].id
 
+        
+
+
         $("#mode").val("update");
         $("#ParticipantAjouter").text("Mettre a jour");
 
 
-
-        $("#ParticipantNom").text();
-        $("#ParticipantTicket").text();
+        $("#ParticipantNom").val($(this).find("td:eq(0)").text());
+        $("#ParticipantTicket").val($(this).find("td:eq(1)").text());
+        $("#rowid").val(selectedId);
 
 
     });
