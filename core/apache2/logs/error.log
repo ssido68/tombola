@@ -42,3 +42,21 @@
 [Wed Jun 01 17:43:07.258683 2022] [core:notice] [pid 26332:tid 400] AH00094: Command line: 'C:\\Users\\rhamb\\GIT\\tombola\\core\\apache2\\bin\\httpd_z.exe -d C:/Users/rhamb/GIT/tombola/core/apache2 -f C:\\Users\\rhamb\\GIT\\tombola\\core\\apache2\\conf\\httpd.conf -d C:\\Users\\rhamb\\GIT\\tombola\\core\\apache2'
 [Wed Jun 01 17:43:07.261683 2022] [mpm_winnt:notice] [pid 26332:tid 400] AH00418: Parent: Created child process 38340
 [Wed Jun 01 17:43:07.744250 2022] [mpm_winnt:notice] [pid 38340:tid 416] AH00354: Child: Starting 150 worker threads.
+[Wed Jun 01 17:59:55.096620 2022] [core:warn] [pid 38848:tid 484] AH00098: pid file C:/Users/rhamb/GIT/tombola/core/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Jun 01 17:59:55.098621 2022] [mpm_winnt:notice] [pid 38848:tid 484] AH00455: Apache/2.4.53 (Win32) configured -- resuming normal operations
+[Wed Jun 01 17:59:55.098621 2022] [mpm_winnt:notice] [pid 38848:tid 484] AH00456: Apache Lounge VS16 Server built: May  4 2022 09:49:57
+[Wed Jun 01 17:59:55.098621 2022] [core:notice] [pid 38848:tid 484] AH00094: Command line: 'C:\\Users\\rhamb\\GIT\\tombola\\core\\apache2\\bin\\httpd_z.exe -d C:/Users/rhamb/GIT/tombola/core/apache2 -f C:\\Users\\rhamb\\GIT\\tombola\\core\\apache2\\conf\\httpd.conf -d C:\\Users\\rhamb\\GIT\\tombola\\core\\apache2'
+[Wed Jun 01 17:59:55.100622 2022] [mpm_winnt:notice] [pid 38848:tid 484] AH00418: Parent: Created child process 932
+[Wed Jun 01 17:59:55.449529 2022] [mpm_winnt:notice] [pid 932:tid 424] AH00354: Child: Starting 150 worker threads.
+[Wed Jun 01 18:20:38.226320 2022] [core:warn] [pid 23632:tid 424] AH00098: pid file C:/Users/rhamb/GIT/tombola/core/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Jun 01 18:20:38.228321 2022] [mpm_winnt:notice] [pid 23632:tid 424] AH00455: Apache/2.4.53 (Win32) configured -- resuming normal operations
+[Wed Jun 01 18:20:38.228321 2022] [mpm_winnt:notice] [pid 23632:tid 424] AH00456: Apache Lounge VS16 Server built: May  4 2022 09:49:57
+[Wed Jun 01 18:20:38.228321 2022] [core:notice] [pid 23632:tid 424] AH00094: Command line: 'C:\\Users\\rhamb\\GIT\\tombola\\core\\apache2\\bin\\httpd_z.exe -d C:/Users/rhamb/GIT/tombola/core/apache2 -f C:\\Users\\rhamb\\GIT\\tombola\\core\\apache2\\conf\\httpd.conf -d C:\\Users\\rhamb\\GIT\\tombola\\core\\apache2'
+[Wed Jun 01 18:20:38.231323 2022] [mpm_winnt:notice] [pid 23632:tid 424] AH00418: Parent: Created child process 24788
+[Wed Jun 01 18:20:38.579475 2022] [mpm_winnt:notice] [pid 24788:tid 436] AH00354: Child: Starting 150 worker threads.
+[Wed Jun 01 18:28:38.092319 2022] [core:warn] [pid 5952:tid 400] AH00098: pid file C:/Users/rhamb/GIT/tombola/core/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Jun 01 18:28:38.201344 2022] [mpm_winnt:notice] [pid 5952:tid 400] AH00455: Apache/2.4.53 (Win32) PHP/8.1.6 configured -- resuming normal operations
+[Wed Jun 01 18:28:38.201344 2022] [mpm_winnt:notice] [pid 5952:tid 400] AH00456: Apache Lounge VS16 Server built: May  4 2022 09:49:57
+[Wed Jun 01 18:28:38.201344 2022] [core:notice] [pid 5952:tid 400] AH00094: Command line: 'C:\\Users\\rhamb\\GIT\\tombola\\core\\apache2\\bin\\httpd_z.exe -d C:/Users/rhamb/GIT/tombola/core/apache2 -f C:\\Users\\rhamb\\GIT\\tombola\\core\\apache2\\conf\\httpd.conf -d C:\\Users\\rhamb\\GIT\\tombola\\core\\apache2'
+[Wed Jun 01 18:28:38.203344 2022] [mpm_winnt:notice] [pid 5952:tid 400] AH00418: Parent: Created child process 17700
+[Wed Jun 01 18:28:38.606435 2022] [mpm_winnt:notice] [pid 17700:tid 400] AH00354: Child: Starting 150 worker threads.
