@@ -1,0 +1,44 @@
+[Wed Jun 01 17:32:24.379186 2022] [mpm_winnt:notice] [pid 36240:tid 448] AH00455: Apache/2.4.53 (Win32) PHP/8.1.6 configured -- resuming normal operations
+[Wed Jun 01 17:32:24.379186 2022] [mpm_winnt:notice] [pid 36240:tid 448] AH00456: Apache Lounge VS16 Server built: May  4 2022 09:49:57
+[Wed Jun 01 17:32:24.379186 2022] [core:notice] [pid 36240:tid 448] AH00094: Command line: 'C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2\\bin\\httpd_z.exe -d C:/Users/rhamb/GIT/UniServerZ/core/apache2 -f C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2\\conf\\httpd.conf -d C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2'
+[Wed Jun 01 17:32:24.384186 2022] [mpm_winnt:notice] [pid 36240:tid 448] AH00418: Parent: Created child process 6992
+[Wed Jun 01 17:32:24.781541 2022] [mpm_winnt:notice] [pid 6992:tid 472] AH00354: Child: Starting 150 worker threads.
+[Wed Jun 01 17:32:25.292595 2022] [authz_core:error] [pid 6992:tid 1900] [client ::1:51969] AH01630: client denied by server configuration: C:/Users/rhamb/GIT/UniServerZ/home/us_splash
+[Wed Jun 01 17:33:41.016838 2022] [core:warn] [pid 21208:tid 476] AH00098: pid file C:/Users/rhamb/GIT/UniServerZ/core/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Jun 01 17:33:41.037542 2022] [mpm_winnt:notice] [pid 21208:tid 476] AH00455: Apache/2.4.53 (Win32) PHP/8.1.6 configured -- resuming normal operations
+[Wed Jun 01 17:33:41.037542 2022] [mpm_winnt:notice] [pid 21208:tid 476] AH00456: Apache Lounge VS16 Server built: May  4 2022 09:49:57
+[Wed Jun 01 17:33:41.037542 2022] [core:notice] [pid 21208:tid 476] AH00094: Command line: 'C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2\\bin\\httpd_z.exe -d C:/Users/rhamb/GIT/UniServerZ/core/apache2 -f C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2\\conf\\httpd.conf -d C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2'
+[Wed Jun 01 17:33:41.042543 2022] [mpm_winnt:notice] [pid 21208:tid 476] AH00418: Parent: Created child process 16820
+[Wed Jun 01 17:33:41.437375 2022] [mpm_winnt:notice] [pid 16820:tid 468] AH00354: Child: Starting 150 worker threads.
+[Wed Jun 01 17:33:41.930578 2022] [authz_core:error] [pid 16820:tid 1932] [client ::1:52088] AH01630: client denied by server configuration: C:/Users/rhamb/GIT/UniServerZ/home/us_splash
+[Wed Jun 01 17:34:00.181535 2022] [core:warn] [pid 33332:tid 464] AH00098: pid file C:/Users/rhamb/GIT/UniServerZ/core/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Jun 01 17:34:00.202542 2022] [mpm_winnt:notice] [pid 33332:tid 464] AH00455: Apache/2.4.53 (Win32) PHP/8.1.6 configured -- resuming normal operations
+[Wed Jun 01 17:34:00.202542 2022] [mpm_winnt:notice] [pid 33332:tid 464] AH00456: Apache Lounge VS16 Server built: May  4 2022 09:49:57
+[Wed Jun 01 17:34:00.202542 2022] [core:notice] [pid 33332:tid 464] AH00094: Command line: 'C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2\\bin\\httpd_z.exe -d C:/Users/rhamb/GIT/UniServerZ/core/apache2 -f C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2\\conf\\httpd.conf -d C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2'
+[Wed Jun 01 17:34:00.206543 2022] [mpm_winnt:notice] [pid 33332:tid 464] AH00418: Parent: Created child process 14732
+[Wed Jun 01 17:34:00.598632 2022] [mpm_winnt:notice] [pid 14732:tid 476] AH00354: Child: Starting 150 worker threads.
+[Wed Jun 01 17:34:01.093551 2022] [authz_core:error] [pid 14732:tid 1940] [client ::1:52116] AH01630: client denied by server configuration: C:/Users/rhamb/GIT/UniServerZ/home/us_splash
+[Wed Jun 01 17:37:10.100401 2022] [core:warn] [pid 10612:tid 488] AH00098: pid file C:/Users/rhamb/GIT/UniServerZ/core/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Jun 01 17:37:10.123407 2022] [mpm_winnt:notice] [pid 10612:tid 488] AH00455: Apache/2.4.53 (Win32) PHP/8.1.6 configured -- resuming normal operations
+[Wed Jun 01 17:37:10.123407 2022] [mpm_winnt:notice] [pid 10612:tid 488] AH00456: Apache Lounge VS16 Server built: May  4 2022 09:49:57
+[Wed Jun 01 17:37:10.123407 2022] [core:notice] [pid 10612:tid 488] AH00094: Command line: 'C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2\\bin\\httpd_z.exe -d C:/Users/rhamb/GIT/UniServerZ/core/apache2 -f C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2\\conf\\httpd.conf -d C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2'
+[Wed Jun 01 17:37:10.128409 2022] [mpm_winnt:notice] [pid 10612:tid 488] AH00418: Parent: Created child process 16988
+[Wed Jun 01 17:37:10.522498 2022] [mpm_winnt:notice] [pid 16988:tid 468] AH00354: Child: Starting 150 worker threads.
+[Wed Jun 01 17:37:49.557964 2022] [core:warn] [pid 34192:tid 472] AH00098: pid file C:/Users/rhamb/GIT/UniServerZ/core/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Jun 01 17:37:49.559965 2022] [mpm_winnt:notice] [pid 34192:tid 472] AH00455: Apache/2.4.53 (Win32) configured -- resuming normal operations
+[Wed Jun 01 17:37:49.559965 2022] [mpm_winnt:notice] [pid 34192:tid 472] AH00456: Apache Lounge VS16 Server built: May  4 2022 09:49:57
+[Wed Jun 01 17:37:49.559965 2022] [core:notice] [pid 34192:tid 472] AH00094: Command line: 'C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2\\bin\\httpd_z.exe -d C:/Users/rhamb/GIT/UniServerZ/core/apache2 -f C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2\\conf\\httpd.conf -d C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2'
+[Wed Jun 01 17:37:49.564966 2022] [mpm_winnt:notice] [pid 34192:tid 472] AH00418: Parent: Created child process 14208
+[Wed Jun 01 17:37:49.931925 2022] [mpm_winnt:notice] [pid 14208:tid 432] AH00354: Child: Starting 150 worker threads.
+[Wed Jun 01 17:38:43.861490 2022] [core:warn] [pid 38620:tid 252] AH00098: pid file C:/Users/rhamb/GIT/UniServerZ/core/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Jun 01 17:38:43.863537 2022] [mpm_winnt:notice] [pid 38620:tid 252] AH00455: Apache/2.4.53 (Win32) configured -- resuming normal operations
+[Wed Jun 01 17:38:43.863537 2022] [mpm_winnt:notice] [pid 38620:tid 252] AH00456: Apache Lounge VS16 Server built: May  4 2022 09:49:57
+[Wed Jun 01 17:38:43.863537 2022] [core:notice] [pid 38620:tid 252] AH00094: Command line: 'C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2\\bin\\httpd_z.exe -d C:/Users/rhamb/GIT/UniServerZ/core/apache2 -f C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2\\conf\\httpd.conf -d C:\\Users\\rhamb\\GIT\\UniServerZ\\core\\apache2'
+[Wed Jun 01 17:38:43.868538 2022] [mpm_winnt:notice] [pid 38620:tid 252] AH00418: Parent: Created child process 33256
+[Wed Jun 01 17:38:44.245541 2022] [mpm_winnt:notice] [pid 33256:tid 424] AH00354: Child: Starting 150 worker threads.
+[Wed Jun 01 17:43:07.256682 2022] [core:warn] [pid 26332:tid 400] AH00098: pid file C:/Users/rhamb/GIT/tombola/core/apache2/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Jun 01 17:43:07.258683 2022] [mpm_winnt:notice] [pid 26332:tid 400] AH00455: Apache/2.4.53 (Win32) configured -- resuming normal operations
+[Wed Jun 01 17:43:07.258683 2022] [mpm_winnt:notice] [pid 26332:tid 400] AH00456: Apache Lounge VS16 Server built: May  4 2022 09:49:57
+[Wed Jun 01 17:43:07.258683 2022] [core:notice] [pid 26332:tid 400] AH00094: Command line: 'C:\\Users\\rhamb\\GIT\\tombola\\core\\apache2\\bin\\httpd_z.exe -d C:/Users/rhamb/GIT/tombola/core/apache2 -f C:\\Users\\rhamb\\GIT\\tombola\\core\\apache2\\conf\\httpd.conf -d C:\\Users\\rhamb\\GIT\\tombola\\core\\apache2'
+[Wed Jun 01 17:43:07.261683 2022] [mpm_winnt:notice] [pid 26332:tid 400] AH00418: Parent: Created child process 38340
+[Wed Jun 01 17:43:07.744250 2022] [mpm_winnt:notice] [pid 38340:tid 416] AH00354: Child: Starting 150 worker threads.
