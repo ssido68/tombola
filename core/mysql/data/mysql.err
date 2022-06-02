@@ -145,3 +145,94 @@
 2022-06-01T16:42:40.738313Z 0 [System] [MY-013105] [Server] C:\Users\rhamb\GIT\tombola\core\mysql\bin\mysqld_z.exe: Normal shutdown.
 2022-06-01T16:42:42.740603Z 0 [Warning] [MY-010909] [Server] C:\Users\rhamb\GIT\tombola\core\mysql\bin\mysqld_z.exe: Forcing close of thread 8  user: 'root'.
 2022-06-01T16:42:43.783654Z 0 [System] [MY-010910] [Server] C:\Users\rhamb\GIT\tombola\core\mysql\bin\mysqld_z.exe: Shutdown complete (mysqld 8.0.29)  MySQL Community Server - GPL.
+2022-06-01T19:18:58.660067Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2022-06-01T19:18:58.660079Z 0 [System] [MY-010116] [Server] C:\Users\rhamb\GIT\tombola\core\mysql\bin\mysqld_z.exe (mysqld 8.0.29) starting as process 39172
+2022-06-01T19:18:58.670741Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2022-06-01T19:18:58.807183Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2022-06-01T19:18:58.905905Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 2, name 'phpmyadmin/pma__bookmark', file '.\phpmyadmin\pma__bookmark.ibd' is missing!
+2022-06-01T19:18:58.906484Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 3, name 'phpmyadmin/pma__column_info', file '.\phpmyadmin\pma__column_info.ibd' is missing!
+2022-06-01T19:18:58.907097Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 4, name 'phpmyadmin/pma__history', file '.\phpmyadmin\pma__history.ibd' is missing!
+2022-06-01T19:18:58.907624Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 5, name 'phpmyadmin/pma__pdf_pages', file '.\phpmyadmin\pma__pdf_pages.ibd' is missing!
+2022-06-01T19:18:58.908202Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 6, name 'phpmyadmin/pma__recent', file '.\phpmyadmin\pma__recent.ibd' is missing!
+2022-06-01T19:18:58.908726Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 7, name 'phpmyadmin/pma__favorite', file '.\phpmyadmin\pma__favorite.ibd' is missing!
+2022-06-01T19:18:58.909294Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 8, name 'phpmyadmin/pma__table_uiprefs', file '.\phpmyadmin\pma__table_uiprefs.ibd' is missing!
+2022-06-01T19:18:58.909849Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 9, name 'phpmyadmin/pma__relation', file '.\phpmyadmin\pma__relation.ibd' is missing!
+2022-06-01T19:18:58.910425Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 10, name 'phpmyadmin/pma__table_coords', file '.\phpmyadmin\pma__table_coords.ibd' is missing!
+2022-06-01T19:18:58.910983Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 11, name 'phpmyadmin/pma__table_info', file '.\phpmyadmin\pma__table_info.ibd' is missing!
+2022-06-01T19:18:58.911515Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 12, name 'phpmyadmin/pma__tracking', file '.\phpmyadmin\pma__tracking.ibd' is missing!
+2022-06-01T19:18:58.912027Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 13, name 'phpmyadmin/pma__userconfig', file '.\phpmyadmin\pma__userconfig.ibd' is missing!
+2022-06-01T19:18:58.912551Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 14, name 'phpmyadmin/pma__users', file '.\phpmyadmin\pma__users.ibd' is missing!
+2022-06-01T19:18:58.913044Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 15, name 'phpmyadmin/pma__usergroups', file '.\phpmyadmin\pma__usergroups.ibd' is missing!
+2022-06-01T19:18:58.913579Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 16, name 'phpmyadmin/pma__navigationhiding', file '.\phpmyadmin\pma__navigationhiding.ibd' is missing!
+2022-06-01T19:18:58.914154Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 17, name 'phpmyadmin/pma__savedsearches', file '.\phpmyadmin\pma__savedsearches.ibd' is missing!
+2022-06-01T19:18:58.914706Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 18, name 'phpmyadmin/pma__central_columns', file '.\phpmyadmin\pma__central_columns.ibd' is missing!
+2022-06-01T19:18:58.915313Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 19, name 'phpmyadmin/pma__designer_settings', file '.\phpmyadmin\pma__designer_settings.ibd' is missing!
+2022-06-01T19:18:58.915892Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 20, name 'phpmyadmin/pma__export_templates', file '.\phpmyadmin\pma__export_templates.ibd' is missing!
+2022-06-01T19:18:59.059524Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-06-01T19:18:59.059863Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2022-06-01T19:18:59.095968Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2022-06-01T19:18:59.096125Z 0 [System] [MY-010931] [Server] C:\Users\rhamb\GIT\tombola\core\mysql\bin\mysqld_z.exe: ready for connections. Version: '8.0.29'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2022-06-01T20:27:46.710016Z 75 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.29).
+2022-06-01T20:27:46.710537Z 0 [System] [MY-013105] [Server] C:\Users\rhamb\GIT\tombola\core\mysql\bin\mysqld_z.exe: Normal shutdown.
+2022-06-01T20:27:48.724030Z 0 [Warning] [MY-010909] [Server] C:\Users\rhamb\GIT\tombola\core\mysql\bin\mysqld_z.exe: Forcing close of thread 54  user: 'root'.
+2022-06-01T20:27:49.368717Z 0 [System] [MY-010910] [Server] C:\Users\rhamb\GIT\tombola\core\mysql\bin\mysqld_z.exe: Shutdown complete (mysqld 8.0.29)  MySQL Community Server - GPL.
+2022-06-02T18:17:29.397609Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2022-06-02T18:17:29.397627Z 0 [System] [MY-010116] [Server] C:\Users\rhamb\GIT\tombola\core\mysql\bin\mysqld_z.exe (mysqld 8.0.29) starting as process 24572
+2022-06-02T18:17:29.450630Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2022-06-02T18:17:29.625224Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2022-06-02T18:17:29.735780Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 2, name 'phpmyadmin/pma__bookmark', file '.\phpmyadmin\pma__bookmark.ibd' is missing!
+2022-06-02T18:17:29.736310Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 3, name 'phpmyadmin/pma__column_info', file '.\phpmyadmin\pma__column_info.ibd' is missing!
+2022-06-02T18:17:29.736850Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 4, name 'phpmyadmin/pma__history', file '.\phpmyadmin\pma__history.ibd' is missing!
+2022-06-02T18:17:29.737396Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 5, name 'phpmyadmin/pma__pdf_pages', file '.\phpmyadmin\pma__pdf_pages.ibd' is missing!
+2022-06-02T18:17:29.737917Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 6, name 'phpmyadmin/pma__recent', file '.\phpmyadmin\pma__recent.ibd' is missing!
+2022-06-02T18:17:29.738407Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 7, name 'phpmyadmin/pma__favorite', file '.\phpmyadmin\pma__favorite.ibd' is missing!
+2022-06-02T18:17:29.738937Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 8, name 'phpmyadmin/pma__table_uiprefs', file '.\phpmyadmin\pma__table_uiprefs.ibd' is missing!
+2022-06-02T18:17:29.739469Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 9, name 'phpmyadmin/pma__relation', file '.\phpmyadmin\pma__relation.ibd' is missing!
+2022-06-02T18:17:29.739980Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 10, name 'phpmyadmin/pma__table_coords', file '.\phpmyadmin\pma__table_coords.ibd' is missing!
+2022-06-02T18:17:29.740508Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 11, name 'phpmyadmin/pma__table_info', file '.\phpmyadmin\pma__table_info.ibd' is missing!
+2022-06-02T18:17:29.741114Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 12, name 'phpmyadmin/pma__tracking', file '.\phpmyadmin\pma__tracking.ibd' is missing!
+2022-06-02T18:17:29.741628Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 13, name 'phpmyadmin/pma__userconfig', file '.\phpmyadmin\pma__userconfig.ibd' is missing!
+2022-06-02T18:17:29.742190Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 14, name 'phpmyadmin/pma__users', file '.\phpmyadmin\pma__users.ibd' is missing!
+2022-06-02T18:17:29.742686Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 15, name 'phpmyadmin/pma__usergroups', file '.\phpmyadmin\pma__usergroups.ibd' is missing!
+2022-06-02T18:17:29.743210Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 16, name 'phpmyadmin/pma__navigationhiding', file '.\phpmyadmin\pma__navigationhiding.ibd' is missing!
+2022-06-02T18:17:29.743770Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 17, name 'phpmyadmin/pma__savedsearches', file '.\phpmyadmin\pma__savedsearches.ibd' is missing!
+2022-06-02T18:17:29.744308Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 18, name 'phpmyadmin/pma__central_columns', file '.\phpmyadmin\pma__central_columns.ibd' is missing!
+2022-06-02T18:17:29.744856Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 19, name 'phpmyadmin/pma__designer_settings', file '.\phpmyadmin\pma__designer_settings.ibd' is missing!
+2022-06-02T18:17:29.745415Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 20, name 'phpmyadmin/pma__export_templates', file '.\phpmyadmin\pma__export_templates.ibd' is missing!
+2022-06-02T18:17:29.915890Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-06-02T18:17:29.916228Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2022-06-02T18:17:29.958627Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2022-06-02T18:17:29.958748Z 0 [System] [MY-010931] [Server] C:\Users\rhamb\GIT\tombola\core\mysql\bin\mysqld_z.exe: ready for connections. Version: '8.0.29'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2022-06-02T18:28:26.325997Z 30 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.29).
+2022-06-02T18:28:26.326574Z 0 [System] [MY-013105] [Server] C:\Users\rhamb\GIT\tombola\core\mysql\bin\mysqld_z.exe: Normal shutdown.
+2022-06-02T18:28:27.196733Z 0 [System] [MY-010910] [Server] C:\Users\rhamb\GIT\tombola\core\mysql\bin\mysqld_z.exe: Shutdown complete (mysqld 8.0.29)  MySQL Community Server - GPL.
+2022-06-02T18:30:17.005677Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2022-06-02T18:30:17.005688Z 0 [System] [MY-010116] [Server] C:\Users\rhamb\GIT\tombola\core\mysql\bin\mysqld_z.exe (mysqld 8.0.29) starting as process 37192
+2022-06-02T18:30:17.016545Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2022-06-02T18:30:17.158468Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2022-06-02T18:30:17.254111Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 2, name 'phpmyadmin/pma__bookmark', file '.\phpmyadmin\pma__bookmark.ibd' is missing!
+2022-06-02T18:30:17.254739Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 3, name 'phpmyadmin/pma__column_info', file '.\phpmyadmin\pma__column_info.ibd' is missing!
+2022-06-02T18:30:17.255271Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 4, name 'phpmyadmin/pma__history', file '.\phpmyadmin\pma__history.ibd' is missing!
+2022-06-02T18:30:17.255774Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 5, name 'phpmyadmin/pma__pdf_pages', file '.\phpmyadmin\pma__pdf_pages.ibd' is missing!
+2022-06-02T18:30:17.256322Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 6, name 'phpmyadmin/pma__recent', file '.\phpmyadmin\pma__recent.ibd' is missing!
+2022-06-02T18:30:17.256840Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 7, name 'phpmyadmin/pma__favorite', file '.\phpmyadmin\pma__favorite.ibd' is missing!
+2022-06-02T18:30:17.257494Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 8, name 'phpmyadmin/pma__table_uiprefs', file '.\phpmyadmin\pma__table_uiprefs.ibd' is missing!
+2022-06-02T18:30:17.258034Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 9, name 'phpmyadmin/pma__relation', file '.\phpmyadmin\pma__relation.ibd' is missing!
+2022-06-02T18:30:17.258608Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 10, name 'phpmyadmin/pma__table_coords', file '.\phpmyadmin\pma__table_coords.ibd' is missing!
+2022-06-02T18:30:17.259210Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 11, name 'phpmyadmin/pma__table_info', file '.\phpmyadmin\pma__table_info.ibd' is missing!
+2022-06-02T18:30:17.259733Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 12, name 'phpmyadmin/pma__tracking', file '.\phpmyadmin\pma__tracking.ibd' is missing!
+2022-06-02T18:30:17.260240Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 13, name 'phpmyadmin/pma__userconfig', file '.\phpmyadmin\pma__userconfig.ibd' is missing!
+2022-06-02T18:30:17.260803Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 14, name 'phpmyadmin/pma__users', file '.\phpmyadmin\pma__users.ibd' is missing!
+2022-06-02T18:30:17.261297Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 15, name 'phpmyadmin/pma__usergroups', file '.\phpmyadmin\pma__usergroups.ibd' is missing!
+2022-06-02T18:30:17.261818Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 16, name 'phpmyadmin/pma__navigationhiding', file '.\phpmyadmin\pma__navigationhiding.ibd' is missing!
+2022-06-02T18:30:17.262370Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 17, name 'phpmyadmin/pma__savedsearches', file '.\phpmyadmin\pma__savedsearches.ibd' is missing!
+2022-06-02T18:30:17.262903Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 18, name 'phpmyadmin/pma__central_columns', file '.\phpmyadmin\pma__central_columns.ibd' is missing!
+2022-06-02T18:30:17.263417Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 19, name 'phpmyadmin/pma__designer_settings', file '.\phpmyadmin\pma__designer_settings.ibd' is missing!
+2022-06-02T18:30:17.263944Z 1 [Warning] [MY-012351] [InnoDB] Tablespace 20, name 'phpmyadmin/pma__export_templates', file '.\phpmyadmin\pma__export_templates.ibd' is missing!
+2022-06-02T18:30:17.414477Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-06-02T18:30:17.414813Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2022-06-02T18:30:17.452601Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2022-06-02T18:30:17.452872Z 0 [System] [MY-010931] [Server] C:\Users\rhamb\GIT\tombola\core\mysql\bin\mysqld_z.exe: ready for connections. Version: '8.0.29'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2022-06-02T19:43:43.448831Z 58 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.29).
+2022-06-02T19:43:43.449400Z 0 [System] [MY-013105] [Server] C:\Users\rhamb\GIT\tombola\core\mysql\bin\mysqld_z.exe: Normal shutdown.
+2022-06-02T19:43:44.598583Z 0 [System] [MY-010910] [Server] C:\Users\rhamb\GIT\tombola\core\mysql\bin\mysqld_z.exe: Shutdown complete (mysqld 8.0.29)  MySQL Community Server - GPL.

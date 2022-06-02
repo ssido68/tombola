@@ -192,66 +192,52 @@ function Notification_functions() {
 
 
 
-function ChargerParticipants() {
-    OpenDb();
-    database.transaction(function (tx) {
-        var selectSql = 'select rowid,name,tickets from Participant';
-        tx.executeSql(selectSql, [], function (tx, result) {
-
-            console.log('result.rows.length = ' + result.rows.length);
-            var tableParticipants = $('#Participants').DataTable();
-            tableParticipants.clear()
-                .draw();
-
-            for (i = 0; i < result.rows.length; i++) {
-
-                var thisRowid = result.rows.item(i).rowid;
-                var thisName = result.rows.item(i).name;
-                var thisTickets = result.rows.item(i).tickets;
-                var thisSupprimer = "<button class='btn-danger SupprimerParticipation'  participant-rowid='" + thisRowid + "' title='Supprimer paricipation' >-</button>";
-
-                var data = {
-                    "rowid": thisRowid,
-                    "name": thisName,
-                    "tickets": thisTickets,
-                    "action": thisSupprimer
-                }
-
-                var newRow = tableParticipants
-                    .row.add(data)
-                    .draw()
-                    .node();
-                $(newRow).find('td').eq(0).attr("id", thisRowid);
-
-
-            }
-            tableParticipants.draw()
-
-
-
-
-
-        }, function (tx, error) {
-            alert(error);
-        });
-    });
-}
 
 $(document).ready(function () {
     Fonctions_Participants();
-    ChargerParticipants();
 
+    item = {}
+    item["action"] = "select";
+
+    var dataString = JSON.stringify(item)
+    console.log("data:" + dataString);
 
     $("#Participants").DataTable({
         bInfo: false,
         paging: false,
-        data: null,
         dom: 'lrtip',
+        ajax: {
+            url: "/api/participants.php",
+            data: dataString,
+            type: "POST",
+            contentType: 'application/json',
+            dataSrc: ""
+        },
         columns: [
-            { "data": "rowid" },
-            { "data": "name" },
-            { "data": "tickets" },
-            { "data": "action" }
+            {
+                data: "id",
+                render: function (data, type, model) {
+                    return model.id;
+                }
+            },
+            {
+                "data": "name",
+                render: function (data, type, model) {
+                    return model.name;
+                }
+            },
+            {
+                "data": "tickets",
+                render: function (data, type, model) {
+                    return model.tickets;
+                }
+            },
+            {
+                "data": "action",
+                render: function (data, type, model) {
+                    return "<button class='btn-danger SupprimerParticipation'  participant-rowid='" + model.id + "' title='Supprimer paricipation' >-</button>";;
+                }
+            }
         ],
         columnDefs: [{
             orderable: false,
